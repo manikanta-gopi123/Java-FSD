@@ -1,0 +1,14 @@
+<button routerLink="/addemployee">Add Employee</button>
+<h2>Below Are the List Of employees</h2>
+<table   border="1" >
+    <tr><th>Employee ID</th><th>Employee FirstName</th><th>Employee LastName</th><th>Employee Email</th><th>View Details</th></tr>
+    <tr *ngFor="let  employee of employees">
+        <td>{{employee.id}}</td>
+        <td>{{employee.firstname}}</td>
+        <td>{{employee.lastname}}</td>
+        <td>{{employee.email}}</td>
+        <td><button routerLink="/viewdetails">View Details</button></td>
+    </tr>
+</table>
+
+  
