@@ -1,0 +1,18 @@
+
+<p>this is view page</p>
+<table border="1">
+    
+    <table   border="1" >
+        <tr><th>Employee ID</th><th>Employee FirstName</th><th>Employee LastName</th><th>Employee Email</th><th>Delete the Employee</th><th>Update Employee</th></tr>
+        <tr *ngFor="let  employee of employees">
+            <td>{{employee.id}}</td>
+            <td>{{employee.firstname}}</td>
+            <td>{{employee.lastname}}</td>
+            <td>{{employee.email}}</td>
+            <td><button (click)="deleteuser(employee.id)">Delete Employee</button></td>
+            <td><button routerLink="/update/{{employee.id}}">Update Employee</button></td>
+            
+        </tr>
+</table>
+    
+    

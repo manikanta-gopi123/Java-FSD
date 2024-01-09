@@ -1,0 +1,11 @@
+<h2>Add a New Employee</h2>
+<div>
+<label for="firstname">Employee FirstName</label>
+<input type="text" id="firstname" [(ngModel)]="firstname"><br>
+<label for="lastname">Employee LastName</label>
+<input type="text" id="lastname" [(ngModel)]="lastname"><br>
+<label for="email">Employee Email</label>
+<input type="text" id="email" [(ngModel)]="email"><br>
+<button (click)="addemployee(firstname,lastname,email)">Add Employee</button>
+</div>
+<button routerLink="/employees"> Back</button>
